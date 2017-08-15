@@ -12,6 +12,10 @@
 		796977621F3AEAC80051349D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796977601F3AEAC80051349D /* Main.storyboard */; };
 		796977641F3AEAC80051349D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796977631F3AEAC80051349D /* Assets.xcassets */; };
 		796977671F3AEAC80051349D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 796977651F3AEAC80051349D /* LaunchScreen.storyboard */; };
+		7969776F1F3C24230051349D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7969776E1F3C24230051349D /* 1.png */; };
+		796977731F3C3C3F0051349D /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 796977721F3C3C3F0051349D /* 2.png */; };
+		796977751F3C8D5C0051349D /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 796977741F3C8D5C0051349D /* 3.png */; };
+		796977971F41DAB70051349D /* ZoomUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796977961F41DAB70051349D /* ZoomUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		796977631F3AEAC80051349D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		796977661F3AEAC80051349D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		796977681F3AEAC80051349D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7969776E1F3C24230051349D /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		796977721F3C3C3F0051349D /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		796977741F3C8D5C0051349D /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		796977961F41DAB70051349D /* ZoomUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomUpViewController.swift; path = ../ZoomUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +62,14 @@
 		7969775B1F3AEAC80051349D /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
+				796977961F41DAB70051349D /* ZoomUpViewController.swift */,
 				7969775C1F3AEAC80051349D /* AppDelegate.swift */,
 				7969775E1F3AEAC80051349D /* ViewController.swift */,
 				796977601F3AEAC80051349D /* Main.storyboard */,
 				796977631F3AEAC80051349D /* Assets.xcassets */,
+				796977741F3C8D5C0051349D /* 3.png */,
+				796977721F3C3C3F0051349D /* 2.png */,
+				7969776E1F3C24230051349D /* 1.png */,
 				796977651F3AEAC80051349D /* LaunchScreen.storyboard */,
 				796977681F3AEAC80051349D /* Info.plist */,
 			);
@@ -124,6 +136,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				796977671F3AEAC80051349D /* LaunchScreen.storyboard in Resources */,
+				7969776F1F3C24230051349D /* 1.png in Resources */,
+				796977731F3C3C3F0051349D /* 2.png in Resources */,
+				796977751F3C8D5C0051349D /* 3.png in Resources */,
 				796977641F3AEAC80051349D /* Assets.xcassets in Resources */,
 				796977621F3AEAC80051349D /* Main.storyboard in Resources */,
 			);
@@ -136,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				796977971F41DAB70051349D /* ZoomUpViewController.swift in Sources */,
 				7969775F1F3AEAC80051349D /* ViewController.swift in Sources */,
 				7969775D1F3AEAC80051349D /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +315,7 @@
 				7969776D1F3AEAC80051349D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
