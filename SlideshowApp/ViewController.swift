@@ -6,6 +6,7 @@
 //  Copyright © 2017年 minoru.nishida. All rights reserved.
 //
 /*
+ https://techacademy.jp/my/iphone/ios#swift3-slideshow-app
  画面を2つ作成してください
  1つ目の画面ではスライドショー, 2つ目の画面では拡大画像を表示します
  スライドショー画面には、画像と3つのボタン（進む、戻る、再生/停止）を配置してください
@@ -114,15 +115,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         // シングルタップ
-        let tapGesture:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.tap(_:)))
-        
-        // viewにタップを登録
+        let tapGesture:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.toZoopUpBySegue(_:)))
+        //viewにタップを登録
         self.view.addGestureRecognizer(tapGesture)
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -130,17 +126,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
-
+/*
     @IBAction func tap(_ sender: UITapGestureRecognizer) {
-        print("taped")
+        print("tapped")
         //参考　http://qiita.com/fromage-blanc/items/b3cb0e7833a1d5659463
         let zoomUp = storyboard!.instantiateViewController(withIdentifier: "zoomUp")
         self.present(zoomUp,animated: true, completion: nil)
     }
-    @IBOutlet var tapGesture: UITapGestureRecognizer!
+*/
+    //@IBOutlet var tapGesture: UITapGestureRecognizer!
     
-    
+    // セグエ遷移用に追加 ↓↓↓
+    @IBAction func toZoopUpBySegue(_ sender:UITapGestureRecognizer) {
+        performSegue(withIdentifier: "zoomUp", sender: nil)
+        print("tap2")
+    }
+
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
 

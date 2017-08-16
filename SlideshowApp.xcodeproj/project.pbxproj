@@ -62,9 +62,9 @@
 		7969775B1F3AEAC80051349D /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
-				796977961F41DAB70051349D /* ZoomUpViewController.swift */,
 				7969775C1F3AEAC80051349D /* AppDelegate.swift */,
 				7969775E1F3AEAC80051349D /* ViewController.swift */,
+				796977961F41DAB70051349D /* ZoomUpViewController.swift */,
 				796977601F3AEAC80051349D /* Main.storyboard */,
 				796977631F3AEAC80051349D /* Assets.xcassets */,
 				796977741F3C8D5C0051349D /* 3.png */,
