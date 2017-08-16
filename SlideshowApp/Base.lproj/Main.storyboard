@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="l2M-73-PGg">
-                                <rect key="frame" x="16" y="570" width="34" height="30"/>
+                                <rect key="frame" x="20" y="278" width="34" height="30"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xKL-Am-dxe">
                                         <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
@@ -58,7 +58,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Bv-ZR-xvw">
-                                <rect key="frame" x="316" y="566" width="35" height="34"/>
+                                <rect key="frame" x="604" y="274" width="35" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="next"/>
                                 <connections>
@@ -66,14 +66,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiO-ja-rwE">
-                                <rect key="frame" x="156" y="570" width="63" height="30"/>
+                                <rect key="frame" x="302" y="278" width="63" height="30"/>
                                 <state key="normal" title="play/stop"/>
                                 <connections>
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iaC-gT-oBo"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xYb-3q-Tlm">
-                                <rect key="frame" x="12" y="118" width="351" height="322"/>
+                                <rect key="frame" x="12" y="76" width="643" height="177"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="7VE-T5-Tya" appends="YES" id="WDD-AH-MUs"/>
@@ -85,13 +85,13 @@
                             <constraint firstAttribute="trailing" secondItem="xYb-3q-Tlm" secondAttribute="trailing" constant="12" id="82O-wf-vkg"/>
                             <constraint firstItem="iiO-ja-rwE" firstAttribute="centerX" secondItem="xYb-3q-Tlm" secondAttribute="centerX" id="Ctj-Jx-Can"/>
                             <constraint firstItem="xYb-3q-Tlm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="12" id="K8H-q4-tp4"/>
-                            <constraint firstItem="xYb-3q-Tlm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="118" id="YYS-Ub-gjj"/>
+                            <constraint firstItem="xYb-3q-Tlm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="76" id="YYS-Ub-gjj"/>
                             <constraint firstItem="l2M-73-PGg" firstAttribute="top" secondItem="iiO-ja-rwE" secondAttribute="top" id="hkO-do-n6s"/>
                             <constraint firstItem="iiO-ja-rwE" firstAttribute="bottom" secondItem="4Bv-ZR-xvw" secondAttribute="bottom" id="kC1-xt-DhC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Bv-ZR-xvw" secondAttribute="trailing" constant="8" id="nxh-90-shu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Bv-ZR-xvw" secondAttribute="bottom" constant="23" id="oe6-1t-KaA"/>
                             <constraint firstItem="l2M-73-PGg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="u5k-kl-4JX"/>
-                            <constraint firstAttribute="bottom" secondItem="xYb-3q-Tlm" secondAttribute="bottom" constant="227" id="xeT-bJ-X1Y"/>
+                            <constraint firstAttribute="bottom" secondItem="xYb-3q-Tlm" secondAttribute="bottom" constant="122" id="xeT-bJ-X1Y"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
