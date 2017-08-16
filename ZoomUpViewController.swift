@@ -14,7 +14,7 @@ class ZoomUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print ("zoom:")
-
+        imageView.image = receive_image
         // Do any additional setup after loading the view.
     }
 

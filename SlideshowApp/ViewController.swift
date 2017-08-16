@@ -45,7 +45,6 @@ class ViewController: UIViewController {
     
     //imageViewを宣言しUIImageView
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var nextButton: UIButton!
     
     @IBOutlet weak var backButton: UIButton!
@@ -119,22 +118,15 @@ class ViewController: UIViewController {
         let tapGesture:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.toZoopUpBySegue(_:)))
         //viewにタップを登録
         self.view.addGestureRecognizer(tapGesture)
+        
+        imageView.image = UIImage(named: images[0])
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-/*
-    @IBAction func tap(_ sender: UITapGestureRecognizer) {
-        print("tapped")
-        //参考　http://qiita.com/fromage-blanc/items/b3cb0e7833a1d5659463
-        let zoomUp = storyboard!.instantiateViewController(withIdentifier: "zoomUp")
-        self.present(zoomUp,animated: true, completion: nil)
-    }
-*/
-    //@IBOutlet var tapGesture: UITapGestureRecognizer!
     
     // セグエ遷移用に追加 ↓↓↓
     @IBAction func toZoopUpBySegue(_ sender:UITapGestureRecognizer) {
@@ -150,7 +142,6 @@ class ViewController: UIViewController {
         if segue.identifier == "zoomUp" {
             let zoomUpViewController = segue.destination as! ZoomUpViewController
             
-            //zoomUpViewController.imageView.image = sender as! UIImage
             zoomUpViewController.receive_image = sender as! UIImage
             print(sender.debugDescription)
         }
