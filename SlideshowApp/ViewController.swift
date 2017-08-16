@@ -143,6 +143,17 @@ class ViewController: UIViewController {
             let zoomUpViewController = segue.destination as! ZoomUpViewController
             
             zoomUpViewController.receive_image = sender as! UIImage
+            
+            //タイマーが動いていたら止める
+            if self.timer.isValid {
+                self.timer.invalidate()
+                playToggle = true
+                nextButton.isEnabled = true
+                backButton.isEnabled = true
+            
+            }
+
+
             print(sender.debugDescription)
         }
     }
