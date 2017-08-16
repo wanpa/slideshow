@@ -144,6 +144,12 @@ class ViewController: UIViewController {
 
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "zoomUp" {
+            let zoomUpViewController = segue.destination as! ZoomUpViewController
+            zoomUpViewController.imageIndex = sender as! Int
+        }
+    }
 }
 

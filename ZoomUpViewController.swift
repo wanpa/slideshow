@@ -9,10 +9,13 @@
 import UIKit
 
 class ZoomUpViewController: UIViewController {
+    
+    var imageIndex :Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print ("zoom:")
+        print (imageIndex)
         // Do any additional setup after loading the view.
     }
 
