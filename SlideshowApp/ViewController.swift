@@ -138,8 +138,9 @@ class ViewController: UIViewController {
     
     // セグエ遷移用に追加 ↓↓↓
     @IBAction func toZoopUpBySegue(_ sender:UITapGestureRecognizer) {
-        performSegue(withIdentifier: "zoomUp", sender: nil)
         print("tap2")
+        //print(imageView.image!)
+        performSegue(withIdentifier: "zoomUp", sender: imageView.image)
     }
 
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
@@ -148,7 +149,10 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "zoomUp" {
             let zoomUpViewController = segue.destination as! ZoomUpViewController
-            zoomUpViewController.imageIndex = sender as! Int
+            
+            //zoomUpViewController.imageView.image = sender as! UIImage
+            zoomUpViewController.receive_image = sender as! UIImage
+            print(sender.debugDescription)
         }
     }
 }

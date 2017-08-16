@@ -124,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ohV-Lb-ETj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="532"/>
+                                <rect key="frame" x="-67" y="-131" width="576" height="712"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QC-LQ-qQD">
                                 <rect key="frame" x="170" y="577" width="34" height="30"/>
@@ -136,15 +136,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6QC-LQ-qQD" firstAttribute="centerX" secondItem="ohV-Lb-ETj" secondAttribute="centerX" id="0Wt-bT-UDw"/>
+                            <constraint firstItem="6QC-LQ-qQD" firstAttribute="centerX" secondItem="ohV-Lb-ETj" secondAttribute="centerX" constant="-34" id="0Wt-bT-UDw"/>
                             <constraint firstItem="gDs-xz-KjG" firstAttribute="top" secondItem="6QC-LQ-qQD" secondAttribute="bottom" constant="60" id="JgK-gg-Y6J"/>
-                            <constraint firstItem="ohV-Lb-ETj" firstAttribute="top" secondItem="Aer-F2-PRR" secondAttribute="top" id="NUq-JL-XWm"/>
-                            <constraint firstItem="ohV-Lb-ETj" firstAttribute="centerX" secondItem="Aer-F2-PRR" secondAttribute="centerX" id="PLZ-8N-pcK"/>
-                            <constraint firstItem="6QC-LQ-qQD" firstAttribute="top" secondItem="ohV-Lb-ETj" secondAttribute="bottom" constant="45" id="YK9-af-xyS"/>
-                            <constraint firstItem="ohV-Lb-ETj" firstAttribute="leading" secondItem="Aer-F2-PRR" secondAttribute="leading" id="ZTa-jt-OIR"/>
+                            <constraint firstItem="ohV-Lb-ETj" firstAttribute="top" secondItem="Aer-F2-PRR" secondAttribute="top" constant="-131" id="NUq-JL-XWm"/>
+                            <constraint firstItem="ohV-Lb-ETj" firstAttribute="centerX" secondItem="Aer-F2-PRR" secondAttribute="centerX" constant="33.5" id="PLZ-8N-pcK"/>
+                            <constraint firstItem="6QC-LQ-qQD" firstAttribute="top" secondItem="ohV-Lb-ETj" secondAttribute="bottom" constant="-4" id="YK9-af-xyS"/>
+                            <constraint firstItem="ohV-Lb-ETj" firstAttribute="leading" secondItem="Aer-F2-PRR" secondAttribute="leading" constant="-67" id="ZTa-jt-OIR"/>
                             <constraint firstItem="6QC-LQ-qQD" firstAttribute="centerX" secondItem="Aer-F2-PRR" secondAttribute="centerX" id="tde-q3-agw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="ohV-Lb-ETj" id="6Df-67-hE0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96A-hK-Fag" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="JGn-gX-R5I" userLabel="Exit" sceneMemberID="exit"/>
